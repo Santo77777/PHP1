@@ -62,6 +62,58 @@ echo "<br>";
 
 
 
+echo ("<br><br>Ejercicio 3 <br>");
+
+$cantidadZapatos = 5;
+$valorZapatos = 150000;
+$totalCompra = $cantidadZapatos*$valorZapatos;
+$vdescuento =0;
+$descuento = 0 ;
+$valorPagar =$totalCompra-$vdescuento;
+
+
+if ($cantidadZapatos==3){
+    $vdescuento = $totalCompra * 0.10;
+    $descuento = 10;
+}else if($cantidadZapatos>3 && $cantidadZapatos<=5){
+    $vdescuento = $totalCompra * 0.20;
+    $descuento = 20;
+}else if($cantidadZapatos >5){
+    $vdescuento = $totalCompra * 0.40;
+    $descuento = 40;
+}
+echo("Cantidad Vendida: ".$cantidadZapatos."<br> Valor zapatos: ".$valorZapatos."<br> Costo Neto: ".$totalCompra.
+"<br> Descuento es: ".$descuento."%<br> Valor del Descuento:".$vdescuento."<br> Valor a Pagar es:".$valorPagar);
+
+
+
+echo ("<br><br>Ejercicio 4 <br>");
+
+
+
+$sdevengado=0;
+$hTrabajadas=36;
+$vHora=20000;
+$vExtras=25000;
+$hExtras=$hTrabajadas-40;
+$sdevengadoe=$hTrabajadas*$vExtras;
+
+
+
+
+
+if($hTrabajadas <=40){
+    $sdevengado=$vHora*$hTrabajadas;
+    echo("Numero de horas trabajadas: ".$hTrabajadas."<br> Sueldo recibido: ".$sdevengado);
+
+    
+}else {
+    echo("Numero de horas trabajadas Extras: ".$hExtras."<br> Sueldo recibido: ".$sdevengadoe);
+}
+
+
+echo ("<br><br>Ejercicio 5 <br>");
+
 
 
 
